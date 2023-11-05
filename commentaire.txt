@@ -1,0 +1,24 @@
+
+
+INDEX ou STAGE
+Indexer un fichier signifie 
+le garder(les modifications) dans le stage en attendant la validation 
+cela ce fait grace a la commande git add
+Ex: git add  fichier.ext
+
+COMMIT
+Commiter un fichier signifie 
+enregistrer une nouvelle version de ce fichier(les modifications) dans le repositorie
+cela ce fait grace a la commande git commit avec l'argument -m pour ajouter une description
+Ex: git commit -m "..Description.."
+
+PUSH 
+Pusher un commit signifie envoyer la nouvelle version(commit) au depot distant
+cela ce fait grace a la commande git push origin nom_de_la_branche
+Ex: git push origin main
+
+Procedure pour relier le depot local au depot distant
+- Recuperer le lien ssh generer sur github
+- Ensuite taper la commande : git remote add origin lien_generer
+- Ensuite git branch -M nom_de_la_branche
+- Ensuite git push -u origin branche
